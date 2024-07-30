@@ -1,0 +1,5 @@
+id,password,last_login,is_superuser,username,first_name,last_name,email,is_staff,is_active,date_joined
+1,Saurabh@1234,"2024-07-29 06:28:22.947693",1,lenovo,,,sm@gmail.com,1,1,"2024-07-29 06:16:33.617946"
+2,pbkdf2_sha256$720000$CpxroMeFVzB1pjrgyxRO39$76eZqTwMxDYd7Ul90InsadaxZ4sMyI2N5fvnHdkKaek=,"2024-07-29 17:14:04.261626",1,Saurabh0983,,,saurabhmadrap0983@gmail.com,1,1,"2024-07-29 13:01:47.444325"
+3,pbkdf2_sha256$720000$TTlQtQ212CjV7mCiEtI7ut$pBSJbu4Pvc6z+poC5ys44mVefwEn1do4vAiuZ33Ktf0=,NULL,1,Sunay,,,synay@gmail.com,1,1,"2024-07-30 04:19:35.513723"
+4,pbkdf2_sha256$720000$8yTcYxV3r47lceyCoZxg7K$WXJMLzOTH3ldx8y2iqqgq77ZEblJlszEs5pn5QuQSko=,NULL,1,Viksha,,,Viksha@gmail.com,1,1,"2024-07-30 04:37:12.066741"
