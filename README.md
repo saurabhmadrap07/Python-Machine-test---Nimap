@@ -85,147 +85,107 @@ The response will include an `access` token that you can use to access other API
 
     - **Response:**
 
-        ```json
-        [
+  ```json
+    {
+        "id": 1,
+        "projects": [],
+        "client_name": "Saurabh",
+        "created_at": "2024-07-29T06:30:06.008410Z",
+        "updated_at": "2024-07-30T04:18:29.433861Z",
+        "created_by": 1
+    },
+    {
+        "id": 2,
+        "projects": [
             {
                 "id": 1,
-                "client_name": "Nimap",
-                "created_at": "2019-12-24T11:03:55.931739+05:30",
-                "created_by": "Rohit"
-            },
+                "project_name": "nimap_task1",
+                "created_at": "2024-07-29T06:33:29.318109Z",
+                "client": 2,
+                "created_by": 1,
+                "users": [
+                    1
+                ]
+            }
+        ],
+        "client_name": "Tushar",
+        "created_at": "2024-07-29T06:32:44.815565Z",
+        "updated_at": "2024-07-30T04:18:29.433861Z",
+        "created_by": 1
+    },
+    {
+        "id": 3,
+        "projects": [],
+        "client_name": "Abhi",
+        "created_at": "2024-07-29T10:46:12.434892Z",
+        "updated_at": "2024-07-30T04:18:29.433861Z",
+        "created_by": 1
+    },
+    {
+        "id": 4,
+        "projects": [
             {
                 "id": 2,
-                "client_name": "Infotech",
-                "created_at": "2019-12-24T11:03:55.931739+05:30",
-                "created_by": "Rohit"
+                "project_name": "SMS",
+                "created_at": "2024-07-29T12:38:49.839894Z",
+                "client": 4,
+                "created_by": 1,
+                "users": [
+                    1
+                ]
             }
-        ]
-        ```
-
-- **Create a new client**
-
-    - **POST** `/api/clients/`
-    - **Body:**
-
-        ```json
-        {
-            "client_name": "<client_name>"
-        }
-        ```
-
-    - **Response:**
-
-        ```json
-        {
-            "id": 3,
-            "client_name": "company A",
-            "created_at": "2019-12-24T11:03:55.931739+05:30",
-            "created_by": "Rohit"
-        }
-        ```
-
-- **Retrieve client information along with projects**
-
-    - **GET** `/api/clients/<id>/`
-
-    - **Response:**
-
-        ```json
-        {
-            "id": 2,
-            "client_name": "Infotech",
-            "projects": [
-                {
-                    "id": 1,
-                    "name": "project A"
-                }
-            ],
-            "created_at": "2019-12-24T11:03:55.931739+05:30",
-            "created_by": "Rohit",
-            "updated_at": "2019-12-24T11:03:55.931739+05:30"
-        }
-        ```
-
-- **Update client information**
-
-    - **PUT/PATCH** `/api/clients/<id>/`
-    - **Body:**
-
-        ```json
-        {
-            "client_name": "<new_client_name>"
-        }
-        ```
-
-    - **Response:**
-
-        ```json
-        {
-            "id": 3,
-            "client_name": "company A",
-            "created_at": "2019-12-24T11:03:55.931739+05:30",
-            "created_by": "Rohit",
-            "updated_at": "2019-12-24T11:03:55.931739+05:30"
-        }
-        ```
-
-- **Delete a client**
-
-    - **DELETE** `/api/clients/<id>/`
-    - **Response Status:** `204 No Content`
-
-### 📁 Projects
-
-- **Create a new project**
-
-    - **POST** `/api/clients/<client_id>/projects/`
-    - **Body:**
-
-        ```json
-        {
-            "project_name": "<project_name>",
-            "users": [
-                {
-                    "id": "<user_id>",
-                    "name": "<user_name>"
-                }
-            ]
-        }
-        ```
-
-    - **Response:**
-
-        ```json
-        {
-            "id": 3,
-            "project_name": "Project A",
-            "client": "Nimap",
-            "users": [
-                {
-                    "id": 1,
-                    "name": "Rohit"
-                }
-            ],
-            "created_at": "2019-12-24T11:03:55.931739+05:30",
-            "created_by": "Ganesh"
-        }
-        ```
-
-- **List all projects assigned to the logged-in user**
-
-    - **GET** `/api/projects/`
-
-    - **Response:**
-
-        ```json
-        [
+        ],
+        "client_name": "Shubham",
+        "created_at": "2024-07-29T10:46:31.368522Z",
+        "updated_at": "2024-07-30T04:18:29.433861Z",
+        "created_by": 1
+    },
+    {
+        "id": 5,
+        "projects": [
             {
-                "id": 1,
-                "project_name": "Project A",
-                "created_at": "2019-12-24T11:03:55.931739+05:30",
-                "created_by": "Ganesh"
+                "id": 3,
+                "project_name": "Python car game",
+                "created_at": "2024-07-29T17:15:48.729328Z",
+                "client": 5,
+                "created_by": 2,
+                "users": [
+                    2
+                ]
             }
-        ]
+        ],
+        "client_name": "Yugal",
+        "created_at": "2024-07-29T10:46:42.717151Z",
+        "updated_at": "2024-07-30T04:18:29.433861Z",
+        "created_by": 1
+    },
+    {
+        "id": 6,
+        "projects": [],
+        "client_name": "Omkar",
+        "created_at": "2024-07-29T10:47:03.638351Z",
+        "updated_at": "2024-07-30T04:18:29.433861Z",
+        "created_by": 1
+    },
+    {
+        "id": 7,
+        "projects": [],
+        "client_name": "Yash",
+        "created_at": "2024-07-29T10:47:24.877659Z",
+        "updated_at": "2024-07-30T04:18:29.433861Z",
+        "created_by": 1
+    },
+    {
+        "id": 8,
+        "projects": [],
+        "client_name": "Aditya",
+        "created_at": "2024-07-29T12:38:15.589046Z",
+        "updated_at": "2024-07-30T04:18:29.433861Z",
+        "created_by": 1
+    }
+
         ```
+
+
 
 ## 📝 Created by Saurabh Madrap
